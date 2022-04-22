@@ -1,0 +1,117 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Global.gd" type="Script" id=1]
+[ext_resource path="res://Button.gd" type="Script" id=2]
+
+[node name="Main" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="BG" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 1
+color = Color( 0.00784314, 0.0156863, 0.196078, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Lines" type="ColorRect" parent="BG"]
+margin_left = 256.0
+margin_top = 200.0
+margin_right = 768.0
+margin_bottom = 216.0
+mouse_filter = 1
+
+[node name="ColorRect2" type="ColorRect" parent="BG/Lines"]
+margin_top = 176.0
+margin_right = 512.0
+margin_bottom = 192.0
+mouse_filter = 1
+
+[node name="ColorRect3" type="ColorRect" parent="BG/Lines"]
+margin_left = 152.0
+margin_top = -135.0
+margin_right = 166.0
+margin_bottom = 329.0
+rect_rotation = 0.0137996
+mouse_filter = 1
+
+[node name="ColorRect4" type="ColorRect" parent="BG/Lines"]
+margin_left = 336.0
+margin_top = -134.0
+margin_right = 350.0
+margin_bottom = 329.0
+rect_rotation = 0.0137996
+mouse_filter = 1
+
+[node name="Button1" type="Button" parent="BG/Lines" groups=["across_1", "all_buttons", "column_1", "row_1"]]
+margin_left = 24.0
+margin_top = -128.0
+margin_right = 128.0
+margin_bottom = -24.0
+expand_icon = true
+script = ExtResource( 2 )
+
+[node name="Button2" type="Button" parent="BG/Lines" groups=["all_buttons", "column_2", "row_1"]]
+margin_left = 200.0
+margin_top = -128.0
+margin_right = 304.0
+margin_bottom = -24.0
+expand_icon = true
+script = ExtResource( 2 )
+
+[node name="Button3" type="Button" parent="BG/Lines" groups=["across_2", "all_buttons", "column_3", "row_1"]]
+margin_left = 376.0
+margin_top = -128.0
+margin_right = 480.0
+margin_bottom = -24.0
+expand_icon = true
+script = ExtResource( 2 )
+
+[node name="Button4" type="Button" parent="BG/Lines" groups=["all_buttons", "column_1", "row_2"]]
+margin_left = 24.0
+margin_top = 40.0
+margin_right = 128.0
+margin_bottom = 144.0
+expand_icon = true
+script = ExtResource( 2 )
+
+[node name="Button5" type="Button" parent="BG/Lines" groups=["across_1", "across_2", "all_buttons", "column_2", "row_2"]]
+margin_left = 200.0
+margin_top = 40.0
+margin_right = 304.0
+margin_bottom = 144.0
+expand_icon = true
+script = ExtResource( 2 )
+
+[node name="Button6" type="Button" parent="BG/Lines" groups=["all_buttons", "column_3", "row_2"]]
+margin_left = 376.0
+margin_top = 40.0
+margin_right = 480.0
+margin_bottom = 144.0
+expand_icon = true
+script = ExtResource( 2 )
+
+[node name="Button7" type="Button" parent="BG/Lines" groups=["across_2", "all_buttons", "column_1", "row_3"]]
+margin_left = 24.0
+margin_top = 216.0
+margin_right = 128.0
+margin_bottom = 320.0
+expand_icon = true
+script = ExtResource( 2 )
+
+[node name="Button8" type="Button" parent="BG/Lines" groups=["all_buttons", "column_2", "row_3"]]
+margin_left = 200.0
+margin_top = 216.0
+margin_right = 304.0
+margin_bottom = 320.0
+expand_icon = true
+script = ExtResource( 2 )
+
+[node name="Button9" type="Button" parent="BG/Lines" groups=["across_1", "all_buttons", "column_3", "row_3"]]
+margin_left = 376.0
+margin_top = 216.0
+margin_right = 480.0
+margin_bottom = 320.0
+expand_icon = true
+script = ExtResource( 2 )
